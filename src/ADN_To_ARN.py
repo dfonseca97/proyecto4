@@ -12,7 +12,19 @@ def main():
   fileName =  directory + '/' + fnafile
   print "File: " + fileName
   f = open(fileName, 'r')
-  res = open('../res.fna', 'w')
+  res = open('../results/' + fnafile + '.result', 'w')
+  
+  for line in f:
+
+   if line[0] == '>': continue
+   resLine = ""
+
+   for i in line:
+    if i == 'T':
+     resLine += 'U'
+    else:
+     resLine += i
+   res.write(resLine)
 
   f.close()   
   res.close()
