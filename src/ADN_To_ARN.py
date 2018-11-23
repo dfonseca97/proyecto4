@@ -10,7 +10,7 @@ def main():
  for fnafile in fna:
   
   fileName =  directory + '/' + fnafile
-  print "File: " + fileName
+  #print "File: " + fileName
   f = open(fileName, 'r')
   res = open('../results/' + fnafile + '.result', 'w')
   
@@ -21,7 +21,13 @@ def main():
 
    for i in line:
     if i == 'T':
+     resLine += 'A'
+    elif i == 'A':
      resLine += 'U'
+    elif i == 'C':
+     resLine += 'G'
+    elif i == 'G':
+     resLine += 'C'  
     else:
      resLine += i
    res.write(resLine)
