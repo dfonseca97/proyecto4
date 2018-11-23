@@ -1,18 +1,21 @@
 import sys
 from os import listdir
 from os.path import isfile, join
+from datetime import datetime
 
 def main():
+ 
+ start = datetime.now()
  directory = sys.argv[1]
 
- fna = [filename for filename in listdir(directory) if filename[-4:] == ".fna"]  
+ fna = [filename for filename in listdir(directory) if filename[-3:] == ".fa"]  
  
  for fnafile in fna:
   
   fileName =  directory + '/' + fnafile
   #print "File: " + fileName
   f = open(fileName, 'r')
-  res = open('../results/' + fnafile + '.result', 'w')
+  res = open('/opt/dna/results/' + fnafile + '.result', 'w')
   
   for line in f:
 
@@ -34,6 +37,11 @@ def main():
 
   f.close()   
   res.close()
+  
+ end = datetime.now()
+ total = end - start
+ total_time = total.seconds
+ print(total_time)
 
 if __name__ =='__main__':
  main()
