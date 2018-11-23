@@ -18,4 +18,5 @@ Para la solución han sido implementados dos scripts en python que simulan la si
 ## Referencias
 
 [1] http://www.botanica.cnba.uba.ar/Pakete/3er/LosCompuestosOrganicos/1111/Transcripcion.htm
+
 [2] https://mpi4py.readthedocs.io/en/stable/
