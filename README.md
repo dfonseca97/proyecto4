@@ -19,7 +19,7 @@ La solución cuenta con dos scripts, uno para el código serial y otro para el c
 
 Para el serial:
 ```
-proyecto4/src> ./serial
+proyecto4/src> ./serial.sh
 
 ```
 
@@ -27,7 +27,7 @@ proyecto4/src> ./serial
 Para el paralelo:
 
 ```
-proyecto4/src> ./parallel
+proyecto4/src> ./parallel.sh
 
 ```
 Los scripts crean la carpeta donde será almacenada la respuesta y corren el programa.
