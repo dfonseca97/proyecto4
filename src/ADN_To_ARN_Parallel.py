@@ -59,5 +59,5 @@ main()
 end = datetime.now()
 total = end - start
 total_time = total.seconds
-print(total_time)
+print("Processor: " + MPI.Get_processor_name() + ', Time:' + str(total_time) + "s")
 sys.stdout.flush()

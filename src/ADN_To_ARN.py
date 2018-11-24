@@ -43,7 +43,7 @@ def main():
  end = datetime.now()
  total = end - start
  total_time = total.seconds
- print(total_time)
+ print("Total time: " + str(total_time) + "s")
 
 if __name__ == '__main__':
  main()
