@@ -44,7 +44,8 @@ def adn_to_arn(fna, directory):
     resLine += 'C'  
    else:
     resLine += i
-   resLine += '\n'
+  
+  resLine += '\n'
 
  res.write(resLine)
 

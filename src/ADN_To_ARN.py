@@ -34,7 +34,7 @@ def main():
      resLine += 'C'  
     else:
      resLine += i
-    resLine += '\n'
+   resLine += '\n'
   res.write(resLine)
 
   f.close()   
