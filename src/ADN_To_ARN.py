@@ -12,15 +12,16 @@ def main():
  
  for fnafile in fna:
   
-  fileName =  directory + '/' + fnafile
-  #print "File: " + fileName
+  fileName =  directory + fnafile
+  print "File: " + fileName
   f = open(fileName, 'r')
   res = open('/opt/dna/results/' + fnafile + '.result', 'w')
-  
+  resLine = ""
+
   for line in f:
 
    if line[0] == '>': continue
-   resLine = ""
+  
 
    for i in line:
     if i == 'T':
@@ -33,7 +34,8 @@ def main():
      resLine += 'C'  
     else:
      resLine += i
-   res.write(resLine)
+    resLine += '\n'
+  res.write(resLine)
 
   f.close()   
   res.close()
@@ -43,5 +45,5 @@ def main():
  total_time = total.seconds
  print(total_time)
 
-if __name__ =='__main__':
+if __name__ == '__main__':
  main()
