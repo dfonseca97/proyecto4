@@ -32,6 +32,10 @@ proyecto4/src> ./parallel.sh
 ```
 Los scripts crean la carpeta donde será almacenada la respuesta y corren el programa.
 
+## Video
+
+https://youtu.be/BWjOdIcYQ9s
+
 ## Referencias
 
 [1] http://www.botanica.cnba.uba.ar/Pakete/3er/LosCompuestosOrganicos/1111/Transcripcion.htm
